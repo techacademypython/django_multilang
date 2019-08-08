@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load i18n %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>{% trans 'Salam' %}</h3>
+
+<p>{% trans 'Haqqimizda' %}</p>
+<ul>
+    {% for news in news_list %}
+    <li>{{ news.name }} | {{ news.description }}</li>
+    {% endfor %}
+</ul>
+
+
+</body>
+</html>
